@@ -11,7 +11,7 @@ The objective of the project is for a user to select a directory containing imag
 
 - Make sure you have Python and pip installed on your system.
 - Install the necessary dependencies: `pip install -r requirements.txt`
-- make sure you are in the conda environment (voxar);
+- make sure you are in the conda environment (voxar), run the command `conda env create -f .\environment.yml` to create the environment.
 
 ## Instructions for use
 
@@ -38,7 +38,7 @@ O objetivo do projeto consiste em um usuário selecionar um diretório contendo 
 
 - Certifique-se de ter o Python e o pip instalados no seu sistema.
 - Instale as dependências necessárias: `pip install -r requirements.txt`
-- certifique-se de estar no ambiente conda (voxar);
+- certifique-se de estar no ambiente conda (voxar), execute o comando `conda env create -f .\environment.yml` para criar o ambiente.
 
 ## Instruções de Uso
 
