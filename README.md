@@ -11,6 +11,7 @@ The objective of the project is for a user to select a directory containing imag
 
 - Make sure you have Python and pip installed on your system.
 - Install the necessary dependencies: `pip install -r requirements.txt`
+- make sure you are in the conda environment (voxar);
 
 ## Instructions for use
 
@@ -37,6 +38,7 @@ O objetivo do projeto consiste em um usuário selecionar um diretório contendo 
 
 - Certifique-se de ter o Python e o pip instalados no seu sistema.
 - Instale as dependências necessárias: `pip install -r requirements.txt`
+- certifique-se de estar no ambiente conda (voxar);
 
 ## Instruções de Uso
 
