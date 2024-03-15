@@ -38,8 +38,7 @@ class ImageClassification:
                 classification = self.classify_image(image_path)  
                 output.append([filename,  classification])  
         self.export_to_csv(output)  
-        messagebox.showinfo("Classification Complete", "Classification of images saved in 'resultados.csv'")
-        #abrir o arquivo resultados
+        messagebox.showinfo("Classification Complete", "Classification of images saved in 'resultados.csv'")        
         os.system('resultados.csv')
 
     def classify_image(self, image_path):
