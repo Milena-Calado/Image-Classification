@@ -1,4 +1,4 @@
-# Voxar Challenge (EN)
+# Image Classification
 
 Image classification project, using the ResNet-50 pre-trained model to identify whether an image contains an animal.
 According to the IMAGENET 1000 Class List (IMAGENET.md) attached to this repository, animal classes are in the range 0 to 397, so I used this range to refine the image classification.
