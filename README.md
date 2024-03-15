@@ -9,15 +9,23 @@ The objective of the project is for a user to select a directory containing imag
 
 ## Requirements
 
-- Make sure you have Python and pip installed on your system.
-- Install the necessary dependencies: `pip install -r requirements.txt`
-- make sure you are in the conda environment (voxar), run the command `conda env create -f .\environment.yml` to create the environment.
-
+- Make sure you have Python and pip or conda installed on your system.
+- Install the necessary dependencies:
+```
+pip install -r requirements.txt
+``` 
+- make sure you are in the conda environment (voxar), to create the environment, run the command:
+```
+conda env create -f .\environment.yml
+```
 ## Instructions for use
 
 To use the image classifier, follow these steps:
 
-1. Run the `main.py` script with the command: `python main.py`
+1. Run the `main.py` script with the command:
+   ```
+   python main.py
+   ```
 2. A window will open and you must select the directory containing the images.
 3. After selecting, wait until the sorting process is completed.
 4. A message will be displayed informing you that the image classification has been completed.
