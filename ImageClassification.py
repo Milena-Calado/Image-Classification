@@ -121,6 +121,10 @@ class ImageClassification:
             str: The classification result for the input image, return None if the image is not an animal and return Name of the classification if it is an animal.
         """
         image = Image.open(image_path)
+
+        if image.mode != "RGB":
+            image = image.convert("RGB")
+
         image = self.transform(image).unsqueeze(0)
 
         with torch.no_grad():
