@@ -1,6 +1,6 @@
 """This is the main project file. where the ImageClassification class is called to execute the code."""
 
-from classification import ImageClassification
+from ImageClassification import ImageClassification
 
 if __name__ == "__main__":
 

@@ -15,7 +15,19 @@ from torchvision.models.resnet import ResNet50_Weights as weights
 
 
 class ImageClassification:
-    """Classify images using a pre-trained ResNet-50 model and save the results to a CSV file."""
+    """
+    Classify images using a pre-trained ResNet-50 model
+    and save the results to a CSV file.
+
+    The model used was resnet50, which is a 50-layer deep neural network
+    that allows distinguishing different classes of animals and has the
+    ability to learn complex representations.
+
+    It is also very efficient in training and pre-training on large datasets.
+
+    The model was pre-trained on the ImageNet dataset, which contains over
+    14 million images and 1000 classes of animals, plants, and everyday objects.
+    """
 
     def __init__(self):
         """
@@ -23,7 +35,7 @@ class ImageClassification:
 
         Args:
             weights: The weights to be used by the ResNet-50 model. Defaults to the pre-trained weights.
-            model: The model used was resnet50, which is a 50-layer deep neural network that allows distinguishing different classes of animals and has the ability to learn complex representations, it is also very efficient in training and pre-training on large data sets.
+            model: The model used as already described above was the ResNet-50 model.
             transform: The image transformation to be applied to the input images.
                 transforms.compose: The transformation pipeline to be applied to the input images.
                 transforms.resize: Resize the input images to 224x224 pixels.
@@ -50,7 +62,7 @@ class ImageClassification:
         Select a directory containing the images to be classified.
 
         Args:
-            root_window: The root window of the file dialog.
+            root_window: Python's tkinter library was used to create the graphical user interface, the root window of the file dialog.
             directory: The path to the selected directory.
 
         Returns:
@@ -83,6 +95,7 @@ class ImageClassification:
         Args:
             selected_directory (str): The path to the selected directory.
             filenames (str): The names of the files in the selected directory.
+            filenames.endswith: Recognition is made whether the file is in .jpg, .png or .jpeg format.
         """
         output = []
         for filename in filenames:
@@ -98,7 +111,7 @@ class ImageClassification:
         os.system("resultados.csv")
 
     def classify_image(self, image_path: str):
-        """Classify the input image using the ResNet-50 model.
+        """Classification of input images from the selected directory.
 
         Args:
             image_path (str): path to the image to be classified.
